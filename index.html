@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatwech Gatmuon - Full Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-whitesmoke">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-lg z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="mern-stack-logo scale-75 md:scale-100">
+                        <div class="tech-icons flex gap-2">
+                            <!-- MongoDB -->
+                            <div class="icon-circle bg-brown-600 w-12 h-12 rounded-full flex items-center justify-center">
+                                <i class="fas fa-leaf text-green-500 text-xl"></i>
+                            </div>
+                            <!-- Express -->
+                            <div class="icon-circle bg-black w-12 h-12 rounded-full flex items-center justify-center">
+                                <span class="text-white text-lg font-bold">ex</span>
+                            </div>
+                            <!-- React -->
+                            <div class="icon-circle bg-blue-900 w-12 h-12 rounded-full flex items-center justify-center">
+                                <i class="fab fa-react text-blue-400 text-2xl"></i>
+                            </div>
+                            <!-- Node.js -->
+                            <div class="icon-circle bg-green-600 w-12 h-12 rounded-full flex items-center justify-center">
+                                <i class="fab fa-node-js text-white text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="tech-names flex justify-between px-1 mt-1">
+                            <span class="text-green-600 font-bold">M</span>
+                            <span class="text-black font-bold">E</span>
+                            <span class="text-blue-400 font-bold">R</span>
+                            <span class="text-green-600 font-bold">N</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-600 focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Skills</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 pt-4 pb-3">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Skills</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
+                <div class="w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-blue-500 transform hover:scale-105 transition-transform duration-300 profile-container">
+                    <img src="GG.jpg" alt="Gatwech Gatmuon" class="w-full h-full object-cover profile-image">
+                </div>
+                <div class="text-left hero-text">
+                    <div class="typing-animation-container">
+                        <div id="typing-text" class="typing-text"></div>
+                    </div>
+                    <div class="mt-6 text-gray-700 leading-relaxed hero-description max-w-2xl">
+                        Full-Stack Web Developer with 1 year of experience building end-to-end applications using React, Node.js, and MongoDB. I design responsive UIs, optimize backends, and create seamless user experiences—transforming concepts into high-performance solutions. Committed to clean code, security, and scalability for impactful, maintainable results.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="max-w-4xl mx-auto">
+                <!-- Introduction -->
+                <div class="bg-white rounded-lg shadow-lg p-8 prose lg:prose-lg border-2 border-blue-500 hover:border-blue-600 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-blue-200">
+                    <p class="text-gray-700 leading-relaxed font-mono text-lg" style="font-family: 'Courier New', monospace;">
+                        Hi! I'm Gatwech Gatmuon, a self-driven full-stack developer with 1 year of hands-on experience in MERN stack development (MongoDB, Express.js, React.js, and Node.js). I specialize in building responsive, efficient, and user-friendly web applications—handling everything from designing robust backend APIs to crafting dynamic and interactive frontend interfaces.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-4 font-mono text-lg" style="font-family: 'Courier New', monospace;">
+                        I'm passionate about solving real-world problems with clean code, scalable architecture, and intuitive UI/UX. Whether it's developing a RESTful API, managing database structures, or creating seamless user experiences, I thrive on bringing full-stack projects to life.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-4 font-mono text-lg" style="font-family: 'Courier New', monospace;">
+                        I am constantly learning and adapting to new technologies to enhance my development skills and deliver high-quality web solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Frontend</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 skill-item">
+                            <i class="fab fa-html5 text-2xl text-orange-500 skill-icon"></i>
+                            HTML5
+                        </li>
+                        <li class="flex items-center gap-3 skill-item">
+                            <i class="fab fa-css3-alt text-2xl text-blue-500 skill-icon"></i>
+                            CSS
+                        </li>
+                        <li class="flex items-center gap-3 skill-item">
+                            <i class="fab fa-js text-2xl text-yellow-400 skill-icon"></i>
+                            JavaScript (ES6+)
+                        </li>
+                        <li class="flex items-center gap-3 skill-item">
+                            <i class="fab fa-react text-2xl text-blue-400 skill-icon"></i>
+                            React.js
+                        </li>
+                        <li class="flex items-center gap-3 skill-item">
+                            <i class="fab fa-bootstrap text-2xl text-purple-600 skill-icon"></i>
+                            Bootstrap
+                        </li>
+                        <li class="flex items-center gap-3 skill-item">
+                            <svg class="w-6 h-6 skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                            </svg>
+                            Tailwind CSS
+                        </li>
+                        <li class="flex items-center gap-3 skill-item">
+                            <i class="fab fa-git-alt text-2xl text-orange-600 skill-icon"></i>
+                            git
+                        </li>
+                        <li class="flex items-center gap-3 skill-item">
+                            <i class="fab fa-github text-2xl text-gray-800 skill-icon"></i>
+                            github
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Backend</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 skill-item">
+                            <i class="fab fa-node-js text-2xl text-green-600 skill-icon"></i>
+                            Node.js
+                        </li>
+                        <li class="flex items-center gap-3 skill-item">
+                            <span class="text-2xl font-bold text-black skill-icon">ex</span>
+                            Express.js
+                        </li>
+                        <li class="flex items-center gap-3 skill-item">
+                            <i class="fab fa-react text-2xl text-blue-400 skill-icon"></i>
+                            React.js
+                        </li>
+                        <li class="flex items-center gap-3 skill-item">
+                            <i class="fas fa-server text-2xl text-blue-600 skill-icon"></i>
+                            RESTful APIs
+                        </li>
+                        <li class="flex items-center gap-3 skill-item">
+                            <i class="fas fa-database text-2xl text-green-500 skill-icon"></i>
+                            MongoDB Databases
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="projects">
+        <div class="projects-container">
+            <div class="frontend-projects">
+                <h3 class="project-section-title">Frontend Projects</h3>
+                <!-- Project Card: A responsive card component that displays project details with hover effects -->
+                <div class="project-card">
+                    <h4 class="text-xl font-bold mb-3">Pra-Roz Restaurant</h4>
+                    <div class="mb-4">
+                        <!-- Image container with hover animations and shine effect -->
+                        <div class="project-image-container overflow-hidden rounded-lg shadow-lg mb-4">
+                            <img src="./Ropo.png" alt="Pra-Roz Preview" class="w-full h-64 object-cover rounded-lg transition-transform duration-500 hover:scale-110">
+                        </div>
+                        <!-- Project description and technology tags -->
+                        <p class="text-gray-700 mb-4">A modern restaurant website with an interactive menu, online ordering system, and responsive design.</p>
+                        <!-- Technology stack badges -->
+                        <div class="flex gap-3 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Tailwind CSS</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="backend-projects">
+                <h3 class="project-section-title">Backend Projects</h3>
+                <!-- Backend project cards go here -->
+                <div class="project-card">
+                    <!-- Project content -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-white">Find Me</h2>
+            <div class="flex flex-col items-center">
+                <!-- Social Links -->
+                <div class="flex justify-center space-x-6 mb-12">
+                    <a href="https://web.facebook.com/gatwech.gatmuon.mut.2025" class="text-blue-600 hover:text-blue-800 transform hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="mailto:your.email@example.com" class="text-red-600 hover:text-red-800 transform hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="w-full max-w-md">
+                    <h3 class="text-2xl mb-8 text-white text-center">CONTACT FORM</h3>
+                    <form id="contactForm" onsubmit="sendEmail(event)" class="space-y-6">
+                        <div>
+                            <label for="name" class="text-white">Name</label>
+                            <input type="text" id="name" required class="w-full mt-2 p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="email" class="text-white">Email</label>
+                            <input type="email" id="email" required class="w-full mt-2 p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="message" class="text-white">Message</label>
+                            <textarea id="message" required rows="4" class="w-full mt-2 p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-500 focus:outline-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 px-6 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold hover:opacity-90 transform hover:scale-105 transition-all duration-300">
+                            SEND
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- //project section// -->
+
+   
+
+
+    <script src="main.js"></script>
+</body>
+</html>
